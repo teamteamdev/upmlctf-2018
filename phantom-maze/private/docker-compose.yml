@@ -1,0 +1,7 @@
+version: '2'
+services:
+  phantom_maze:
+    build: .
+    ports:
+        - "30001:8080"
+    restart: always

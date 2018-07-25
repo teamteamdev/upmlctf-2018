@@ -1,0 +1,11 @@
+category:    ppc
+points:      150
+short:       maze
+name:        "Phantom Maze"
+author:      javach
+description: >
+  Флаг спрятан где-то здесь.
+url:         https://maze.ctf.upml.tech
+flags:
+  -
+    text: "uctf_h1dd3n_1n_th3_m4z3"
