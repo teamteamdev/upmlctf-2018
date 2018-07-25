@@ -22,7 +22,7 @@ def index():
 def maze(id):
     if id in ARRAY:
         pos = ARRAY.index(id)
-        if pos == 1023:
+        if pos == 1509:
             return render_template('maze.html', flag='uctf_h1dd3n_1n_th3_m4z3')
         if pos == len(ARRAY) - 1:
             return render_template('final.html')

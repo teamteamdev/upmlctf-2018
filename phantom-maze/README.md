@@ -1,6 +1,6 @@
 # Phantom maze
 
-ppc, 150
+ppc, 200 points
 
 > Флаг спрятан где-то здесь.
 >
