@@ -1,0 +1,8 @@
+version: '2'
+services:
+  phantom_maze:
+    image: upmlctf/phantom-maze
+    build: private
+    ports:
+        - "30001:8080"
+    restart: always

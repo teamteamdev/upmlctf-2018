@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block js %}
+    <script src="../static/script.js"></script>
+{% endblock %}
+
+{% block content %}
+    {% if flag %}
+        <p><b>OMG!</b> You found a flag!</p>
+        <p><code>{{ flag }}</code></p>
+    {% endif %}
+    <p><a>Go to the next room</a></p>
+{% endblock %}
