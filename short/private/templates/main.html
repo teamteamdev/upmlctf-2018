@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>ugra.ml · Ultimate link shortening solutions for business, enterprise and individual customers</title>
+
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <h1>ugra.ml</h1>
+    {% if short_link %}
+    <h2>Yay! Your short link: <a href="/{{ short_link }}" target="_blank">https://ugra.ml/{{ short_link }}</a></h2>
+    <p>It already works! Now you can send your new brand link to friends, colleagues and anyone else!</p>
+    <p><a href="/">Make one more link</a></p>
+    {% else %}
+    <h2>It's time to short everything!</h2>
+    <form method="POST">
+        {% if error %}
+        <p>{{ error }}</p>
+        {% endif %}
+        <input type="text" name="link" required placeholder="Enter your URL" maxlength="300" />
+    </form>
+    {% endif %}
+
+    <p>
+        <strong>ugra.ml</strong> is the fastest shortening provider worldwide. We provide first-class ultimate link
+        shortening solutions for business, enterprise and individual customers. Our engineers made the website where
+        anyone can short his link online, free, without advertisement, signing up or receiving SMS.
+    </p>
+    
+    <p>
+        Our customers are world famous companies, including <strong>Google</strong>, <strong>Yandex</strong>, <strong>USDOD</strong> (Department of Defense), <strong>TL;DR CTF Team</strong>, <strong>Alibaba Group</strong> and others
+    </p>
+
+    <p>
+        Copyright &copy; ugra.ml owners, 2018
+    </p>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter49772980 = new Ya.Metrika2({
+                    id:49772980,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49772980" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</body>
+</html>
