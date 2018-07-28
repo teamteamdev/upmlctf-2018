@@ -1,0 +1,13 @@
+category:    crypto
+points:      100
+short:       b64
+name:        "Well-known"
+author:      nsychev
+description: >
+    Когда кто-то думает, что увидел знакомую кодировку, в мире 
+    расстраивается один автор этого таска.
+    
+    `RKBoNZxWMHInBXFTMn3VBJBdMpxVAL/cB46nR3xeA4hZ`
+flags:
+    -
+        text: uctf_ba5364_c1a5Sic_a1ph4b3t_j0ke
