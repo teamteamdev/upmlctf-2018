@@ -4,5 +4,5 @@ services:
         image: upmlctf/short
         build: private
         ports:
-          - "30001:8000"
+          - "30002:80"
         restart: always
