@@ -1,7 +1,7 @@
 category:    crypto
-points:      100
+points:      150
 short:       b64
-name:        "Well-known"
+name:        "B64"
 author:      nsychev
 description: >
     Когда кто-то думает, что увидел знакомую кодировку, в мире 
