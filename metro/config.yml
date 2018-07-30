@@ -1,0 +1,11 @@
+category:    stegano
+points:      200
+short:       metro
+name:        "The capital"
+author:      nsychev
+description: >
+    Я забыл флаг в Москве, и, чтобы его найти, я взял карту метро. Но оно очень большое! Может быть, ты знаешь, где флаг?
+url:         https://yadi.sk/i/Z3VVr7dg3ZhDQB
+flags:
+    -
+        text: uctfsimplesrch
