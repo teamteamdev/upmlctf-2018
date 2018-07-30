@@ -1,6 +1,6 @@
 # Certificate mess
 
-recon, 100 points
+recon, 200 points
 
 > Как вы могли заметить, [сайт нашего цтфа](https://ctf.upml.tech/) открывается
 > по безопасному протоколу HTTPS.
