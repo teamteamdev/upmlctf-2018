@@ -32,7 +32,7 @@ def main():
             link = "http://" + link
 
         try:
-            requests.head(link, headers=HEADERS)
+            requests.head(link, headers=HEADERS, timeout=0.05)
         except:
             return render_template("main.html", error="Page does not exist")
 
