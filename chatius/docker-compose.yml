@@ -1,0 +1,10 @@
+version: "3.6"
+services:
+    host:
+        image: upmlctf/chatius
+        build: private
+        ports:
+          - "30003:80"
+        volumes:
+          - "./private/db.db:/app/db.db"
+        restart: always

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Авторизация{% endblock%}
+
+{% block buttons %}
+<li ><a href="/">Главная</a></li>
+<li ><a href="/chat">Чат</a></li>
+{% if current_user.is_authenticated %}
+<li><a href="/logout">Выйти</a></li>
+{% else %}
+<li ><a href="/register">Зарегистрироваться</a></li>
+<li class="active"><a href="/login">Войти</a></li>
+{% endif %}
+{% endblock %}
+
+{% block page_name%}Авторизация <p style="color: #ff1a1a">{{ error }}</p>{% endblock %}
+
+{% block content %}
+<div class="container">
+	<div class="row">
+		<form class="form-horizontal" method="POST" action="login">
+
+{{ form.hidden_tag() }}
+{{ wtf.form_field(form.username) }}
+{{ wtf.form_field(form.password) }}
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button name="singlebutton" class="btn btn-primary" id="singlebutton">Войти</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+	</div>
+</div>
+{% endblock %}
