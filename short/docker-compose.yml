@@ -6,3 +6,6 @@ services:
         ports:
           - "30002:80"
         restart: always
+        volumes:
+          - "./private/db.sqlite3:/app/db.sqlite3"
+
