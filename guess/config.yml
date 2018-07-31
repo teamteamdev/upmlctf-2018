@@ -1,0 +1,17 @@
+category:    pwn
+points:      200
+short:       guess
+name:        "Guess Me"
+author:      nsychev
+description: >
+    Спорим, ты не сможешь угадать число за одну попытку?
+    
+    Ставлю флаг на свою победу!
+    
+    `nc guess.ctf.upml.tech 1337`
+attachments:
+    - binary
+flags:
+    -
+        text: "uctf_345y_1st_pwn"
+
