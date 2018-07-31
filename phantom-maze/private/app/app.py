@@ -1,16 +1,10 @@
 from flask import Flask, render_template, request
-import string, random
 
 
 app = Flask(__name__)
-alp = string.digits + string.ascii_lowercase + string.ascii_uppercase
 
-
-def generate():
-    return ''.join([random.choice(alp) for i in range(32)]) 
-
-
-ARRAY = [generate() for i in range(2048)]
+with open("array.txt") as f:
+    ARRAY = f.read().split()
 
 
 @app.route('/')
@@ -38,3 +32,4 @@ def next():
 
 if __name__ == "__main__":
     app.run()
+
