@@ -1,0 +1,20 @@
+category:    stegano
+points:      100
+short:       reverse
+name:        "Totally not a REverse task"
+author:      nsychev
+description: >
+    Я работаю в Роскомнадзоре. Я блокирую сайты. Я блокирую эти ваши телеграммы.
+    Сегодня мне пришел вот этот файл и сообщение о том, что все мои системы 
+    блокировки взломаны!
+    
+    Я сразу внес IP этого негодяя (smtp.yandex.net) в черный список, но, после 
+    того, как вставил [наушники в процессор](https://www.the-village.ru/village/people/howtobe/316129-zapreschalschik), 
+    задумался: а вдруг там и правда что-то важное?
+    
+    Узнай, что в этом файле!
+attachments:
+    - file.bin
+flags:
+    -
+        text: "uctf_r3411y_n0t_a_rev"
