@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# requires python-telegram-bot package from pip
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import logging
 
